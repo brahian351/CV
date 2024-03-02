@@ -3,6 +3,8 @@ import Image from "next/image";
 import Footer from "./footer/page";
 import { useState } from "react";
 import Profesional from "./profesional/page";
+import Estudios from "./estudios/page";
+import Experiencia from "./experiencia/page";
 export default function Home() {
   const [pagina, setPagina] = useState("");
   return (
@@ -71,9 +73,9 @@ export default function Home() {
           {pagina && pagina == "profesional" ? (
             <Profesional />
           ) : pagina == "estudios" ? (
-            ""
+            <Estudios />
           ) : pagina == "experiencia" ? (
-            ""
+            <Experiencia />
           ) : pagina == "referencia" ? (
             ""
           ) : pagina == "anexo" ? (
